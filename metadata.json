@@ -1,0 +1,6 @@
+{
+  "name": "Luna AI",
+  "description": "App premium de acompanhamento de ciclo menstrual com assistente de IA em Português.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["Full-Stack", "AI Chat", "Menstrual Tracking", "PWA"]
+}
