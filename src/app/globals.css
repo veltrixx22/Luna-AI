@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+/* PRIMARY FIX: Ensure body background loads even if JS or Tailwind fails */
+body {
+  background: linear-gradient(135deg, #FFF9F9 0%, #FCE4EC 50%, #F3E5F5 100%) !important;
+  color: #2D2D2D !important;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  -webkit-antialiased: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @theme {
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
@@ -19,13 +31,7 @@
 }
 
 @layer base {
-  body {
-    @apply bg-luna-bg text-luna-text font-sans antialiased;
-    background: linear-gradient(135deg, #FFF9F9 0%, #FCE4EC 50%, #F3E5F5 100%);
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-  }
+  /* Body styles moved to root for maximum reliability */
 }
 
 /* MANDATORY FALLBACK CSS */
